@@ -1,0 +1,12 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ReactComponent from "../components/ReactComponent.jsx";
+import VueComponent from "../components/VueComponent.vue";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <ReactComponent client:load />
+    <VueComponent client:load />
+  </main>
+</Layout>
